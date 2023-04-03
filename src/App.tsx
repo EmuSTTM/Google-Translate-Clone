@@ -1,7 +1,6 @@
 import './App.css'
 
 import { useEffect } from 'react'
-import { AUTO_LANGUAGE } from './constants'
 import { Container, Row, Col, Button,  Stack } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useStore } from './hooks/useStore'
@@ -17,8 +16,6 @@ import { useDebounce } from './hooks/useDebounce'
 
 
 //3. Usamos el hook useReducer
-
-
 function App() {
   const { 
     fromLanguage,
@@ -78,7 +75,7 @@ function App() {
         </Col>
 
         <Col xs='auto'>
-        <Button variant="link" disabled={fromLanguage == AUTO_LANGUAGE } onClick={interchangeLanguages}>
+        <Button variant="link" onClick={interchangeLanguages}>
           <ArrowsIcon />
         </Button>
         </Col>

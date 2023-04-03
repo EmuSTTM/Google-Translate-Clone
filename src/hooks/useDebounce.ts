@@ -8,7 +8,7 @@ vez que tipeabamos una letra
 import { useState, useEffect } from 'react'
 // Un debounce es un valor que espera un tiempo antes de ser llamado
 // El useDebouce va a utilizar el Tipo/Type/T como parámetro. Ejemplo: useDebounce<string>('Hello', 500)
-export function useDebounce<T>(value: T, delay = 500) {
+export function useDebounce<T>(value: T, delay = 800) {
     const [debouncedValue, setDebouncedValue] = useState(value)
 
 //Se ejecuta siempre, cada vez que hay un cambio, de forma sincrona
