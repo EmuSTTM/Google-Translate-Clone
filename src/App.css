@@ -1,5 +1,66 @@
 #root {
-  max-width: 800px;
+  width: 80vw;
   margin: 0 auto;
   padding: 2rem;
+}
+
+body {
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+
+
+.google-icon {
+  content: url(https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg);
+  display: inline-block;
+  height: 24px;
+  width: 74px;
+}
+
+.google-text {
+  display: inline-block;
+  font-family: Product Sans,Arial,sans-serif;
+  font-size: 22px;
+  line-height: 24px;
+  padding-left: 4px;
+}
+
+.google-title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+
+textarea {
+  font-size: 22px !important;
+  line-height: 30px !important;
+}
+
+select {
+  color: #1a0dab !important;
+  cursor: pointer;
+  font-family: arial,sans-serif-medium,sans-serif;
+}
+
+
+@media (max-width: 750px){
+  #root {
+    width: 100vw;
+  }
+ .row{
+  display: flex;
+  flex-direction: column;
+ }
+ .form-control {
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+ }
+ .col-auto{
+  display:flex;
+  justify-content: center;
+ }
+ svg {
+  height: 27px !important;
+  width: 27px !important;
+
+ }
 }

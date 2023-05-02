@@ -5,7 +5,7 @@ llamadas a la API, ya que antes de esto se la llamaba cada
 vez que tipeabamos una letra
 */
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 // Un debounce es un valor que espera un tiempo antes de ser llamado
 // El useDebouce va a utilizar el Tipo/Type/T como parámetro. Ejemplo: useDebounce<string>('Hello', 500)
 export function useDebounce<T>(value: T, delay = 800) {
@@ -37,6 +37,5 @@ Linea de tiempo de cómo se comporta el usuario:
 
 
 */
-
 
 

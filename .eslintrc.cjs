@@ -18,6 +18,8 @@ module.exports = {
     'react'
   ],
   rules: {
-    '@typescript-esling/explicit-function-return-type': 'off'
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/prop-types': 'off'
   }
 }
